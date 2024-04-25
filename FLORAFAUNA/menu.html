@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="mobile-bar">
+            <li onclick=HideSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="catalog.html">Shop</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="index.html" class="logo"><img src="images/logo.png" height="70" viewBox="0 -960 960 960" width="180"></a></li>
+            <li class="hideOnMobile"><a href="about.html">Our Story</a></li>
+            <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a href="catalog.html">Shop</a></li>
+            <li class="menu-button" onclick=ShowSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+
+    </nav>
+    <main class="main3"> 
+
+        <div class="main-text">
+            <h1>Menu</h1>
+
+            <p>Ex labore aute incididunt aliqua sunt. Irure nisi sint minim duis ut veniam ad. Est velit tempor consectetur tempor aliquip. Et mollit amet aliquip sit laborum ullamco adipisicing. Aliqua eu labore ipsum sunt deserunt fugiat irure nostrud enim fugiat eiusmod reprehenderit elit.</p>
+
+        </div>
+
+        <div class="food-hero">
+            <img src="images/food.jpg", alt="photo of sliced sourdough bread">
+            <a href="food.html" class="food-overlay">
+                <p class="food-text">Snacks</p>
+            </a>
+        </div>
+
+        <div class="drinks-hero">
+            <img src="images/drinks.jpg", alt="photo of tea with lemon">
+            <a href="drink.html" class="drinks-overlay">
+                <p class="drinks-text">Drinks</p>
+            </a>
+        </div>
+    </main>
+
+   <footer>
+
+        <div class="footer-info">
+
+            <h3>Store Info</h3>
+            <ul class="info">
+                <li><a href="#">123 Main Ave Raleigh, NC 23456</a></li>
+                <li><a href="tel:9191234567">(919) 123-4567</a></li>
+                <li><a href="mailto:florafauna@email.com">florafauna@email.com</a></li>
+            </ul>
+
+            <h3>Store Hours</h3>
+            <ul class="hours">
+                <li>Monday - Friday: 6:00am - 6:00pm</li>
+                <li>Saturday:  6:00am - 3:00pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>   
+
+
+        <form action="thanks.html">
+            <h2>Join our rewards program!</h2>
+            <Fieldset>
+            
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br> 
+
+                <input type="submit" id="submit" value="SUBMIT">
+
+            </Fieldset>
+        </form>
+
+        <p id="copyright">&copy; Copyright 2024</p>
+
+    </footer>
+
+    <script>
+        function ShowSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "flex"
+        }
+
+        function HideSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "none"
+        }
+
+    </script>
+    
+</body>
+</html>

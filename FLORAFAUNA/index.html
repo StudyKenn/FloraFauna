@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="mobile-bar">
+            <li onclick=HideSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="catalog.html">Shop</a></li>
+            
+        </ul>
+        
+        <ul>
+            <!--<li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36" fill="white"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>-->
+            <li><a href="index.html" class="logo"><img src="images/logo.png" height="70" viewBox="0 -960 960 960" width="180"></a></li>
+            <li class="hideOnMobile"><a href="about.html">Our Story</a></li>
+            <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+            <li class="hideOnMobile"><a href="catalog.html">Shop</a></li>
+            <li class="menu-button" onclick=ShowSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="34" viewBox="0 -960 960 960" width="34" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+
+    </nav>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Love Coffee Love Earth</h1>
+        </div>
+    </div>
+        
+        
+    <main>
+        <p>
+            Proident sunt reprehenderit adipisicing culpa anim officia nostrud do ipsum sunt anim aute. Cupidatat cupidatat dolore id commodo qui. Eiusmod ut ea eu veniam cillum. Exercitation officia incididunt fugiat ex laboris incididunt est dolor veniam amet eiusmod tempor ipsum magna. Adipisicing exercitation laborum sint ipsum sint occaecat dolore in.
+        </p>
+
+        <ul class="home-links">
+            <a href="menu.html">See Our Menu</a>
+            <a href="catalog.html">View Our Plants</a>
+        </ul>
+
+        <p>
+            Laborum nisi consequat aliqua veniam proident consequat non labore et elit aliquip. Cupidatat in minim ad eu labore aliquip id fugiat dolor incididunt ex magna proident aliqua. Veniam veniam velit et veniam cupidatat officia velit pariatur quis occaecat sit officia labore elit. Fugiat sint non laborum officia.
+        </p>
+
+       <!-- <div class="home-charity">
+            <h2>The Pelala Group</h2>
+            <img src="images/charity-d.jpg" alt="group of volunteers for animal charity group">
+            <li><a href="donation.html">Learn About Our Donations</a></li>-->
+
+        </div>
+    </main>
+
+    
+   <footer>
+
+        <div class="footer-info">
+
+            <h3>Store Info</h3>
+            <ul class="info">
+                <li><a href="#">123 Main Ave Raleigh, NC 23456</a></li>
+                <li><a href="tel:9191234567">(919) 123-4567</a></li>
+                <li><a href="mailto:florafauna@email.com">florafauna@email.com</a></li>
+            </ul>
+
+            <h3>Store Hours</h3>
+            <ul class="hours">
+                <li>Monday - Friday: 6:00am - 6:00pm</li>
+                <li>Saturday:  6:00am - 3:00pm</li>
+                <li>Sunday: Closed</li>
+            </ul>
+        </div>   
+    
+        <form action="thanks.html">
+            <h2>Join our rewards program!</h2>
+            <Fieldset>
+            
+                <label for="fname">Full name</label>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br> 
+
+                <input type="submit" id="submit" value="SUBMIT">
+
+            </Fieldset>
+        </form>
+
+        <p id="copyright">&copy; Copyright 2024</p>
+
+    </footer>
+
+    <script>
+
+        function ShowSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "flex"
+        }
+
+        function HideSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "none"
+        }
+
+    </script>
+    
+</body>
+</html>
